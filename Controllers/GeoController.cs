@@ -17,6 +17,7 @@ namespace RestIPGeo.Controllers
         //static readonly string secret = "697191e5c4f062e04247eb3a4af37ee51beea2d5";
         private readonly string BaseUrl = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address";
 
+
         [Route("/geo-search")]
         [HttpGet]
         public async Task<string> SearchCoordinates(string country = "RU", string city = "Москва",
